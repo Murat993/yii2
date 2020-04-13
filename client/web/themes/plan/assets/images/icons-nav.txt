@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-analytics {
+    width: 16px;
+    height: 15px;
+    background-position: -1px -1px;
+}
+
+.sprite-analytics-active {
+    width: 16px;
+    height: 15px;
+    background-position: -1px -18px;
+}
+
+.sprite-company {
+    width: 19px;
+    height: 14px;
+    background-position: -1px -35px;
+}
+
+.sprite-company-active {
+    width: 19px;
+    height: 14px;
+    background-position: -1px -51px;
+}
+
+.sprite-filials {
+    width: 17px;
+    height: 17px;
+    background-position: -1px -67px;
+}
+
+.sprite-filials-active {
+    width: 17px;
+    height: 17px;
+    background-position: -1px -86px;
+}
+
+.sprite-forms {
+    width: 15px;
+    height: 15px;
+    background-position: -1px -105px;
+}
+
+.sprite-forms-active {
+    width: 15px;
+    height: 15px;
+    background-position: -1px -122px;
+}
+
+.sprite-main {
+    width: 15px;
+    height: 15px;
+    background-position: -1px -139px;
+}
+
+.sprite-main-active {
+    width: 15px;
+    height: 15px;
+    background-position: -1px -156px;
+}
+
+.sprite-members {
+    width: 12px;
+    height: 15px;
+    background-position: -1px -173px;
+}
+
+.sprite-members-active {
+    width: 12px;
+    height: 15px;
+    background-position: -1px -190px;
+}
+
+.sprite-objects {
+    width: 12px;
+    height: 15px;
+    background-position: -1px -207px;
+}
+
+.sprite-objects-active {
+    width: 12px;
+    height: 15px;
+    background-position: -1px -224px;
+}
+
+.sprite-report {
+    width: 14px;
+    height: 15px;
+    background-position: -1px -241px;
+}
+
+.sprite-report-active {
+    width: 14px;
+    height: 15px;
+    background-position: -1px -258px;
+}
+
+.sprite-structure {
+    width: 19px;
+    height: 15px;
+    background-position: -1px -275px;
+}
+
+.sprite-structure-active {
+    width: 19px;
+    height: 15px;
+    background-position: -1px -292px;
+}
+
+.sprite-users {
+    width: 18px;
+    height: 15px;
+    background-position: -1px -309px;
+}
+
+.sprite-users-active {
+    width: 18px;
+    height: 15px;
+    background-position: -1px -326px;
+}

@@ -1,0 +1,62 @@
+{
+  "name": "yiisoft/yii2-app-advanced",
+  "description": "Yii 2 Advanced Project Template",
+  "keywords": [
+    "yii2",
+    "framework",
+    "advanced",
+    "project template"
+  ],
+  "homepage": "http://www.yiiframework.com/",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+    "forum": "http://www.yiiframework.com/forum/",
+    "wiki": "http://www.yiiframework.com/wiki/",
+    "irc": "irc://irc.freenode.net/yii",
+    "source": "https://github.com/yiisoft/yii2"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.8",
+    "yiisoft/yii2": "~2.0.14",
+    "yiisoft/yii2-bootstrap": "~2.0.0 ",
+    "yiisoft/yii2-swiftmailer": "2.0.7",
+    "kartik-v/yii2-widget-colorinput": "*",
+    "leandrogehlen/yii2-treegrid": "dev-master",
+    "kartik-v/yii2-widget-fileinput": "@dev",
+    "maxlapko/yii2-image-processor": "dev-master",
+    "execut/yii2-widget-bootstraptreeview": "dev-master",
+    "kartik-v/yii2-widget-select2": "@dev",
+    "miloschuman/yii2-highcharts-widget": "^6.0",
+    "kartik-v/yii2-grid": "dev-master",
+    "kartik-v/yii2-dynagrid": "dev-master",
+    "newerton/yii2-fancybox": "dev-master",
+    "nirvana-msu/yii2-showloading": "1.0.*@dev",
+    "lesha724/yii2-document-viewer": "*",
+    "kartik-v/yii2-mpdf": "dev-master",
+    "kartik-v/yii2-widget-datetimepicker": "*",
+    "phpoffice/phpspreadsheet": "dev-master"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.0.0",
+    "yiisoft/yii2-gii": "~2.0.0",
+    "yiisoft/yii2-faker": "~2.0.0",
+    "codeception/base": "^2.2.3",
+    "codeception/verify": "~0.3.1"
+  },
+  "config": {
+    "process-timeout": 1800,
+    "discard-changes": true,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+@import "../components/_vars.scss";
+@import "../components/_mixins.scss";
+
+.company__head {
+	margin: 0 0 20px;
+	line-height: 21px;
+	font: {
+		size: 18px;
+		weight: 500;
+	}
+
+	color: $text-color-2;
+}
+
+.company__info {
+	padding: 30px 20px;
+	background-color: #fff;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+}
+
+.company__info-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	&:first-child {
+		@media(max-width: $sm-width) {
+			margin-bottom: 20px;
+		}
+	}
+
+	li {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.company__info-label {
+	display: block;
+	margin-bottom: 10px;
+	line-height: 11px;
+	font-size: 12px;
+	color: #9E9E9E;
+}
+
+.company__info-value {
+	display: block;
+	line-height: 15px;
+	font-size: 16px;
+	color: $text-color-2;
+}
+
+.company__button {
+	margin-top: 40px;
+}

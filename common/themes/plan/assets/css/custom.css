@@ -1,0 +1,183 @@
+.page-container {
+    min-height: calc(100vh - 48px);
+}
+
+.winner-photo {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.winner-photo a {
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.winner-text {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-a-center {
+    align-items: center;
+}
+
+.flex-c-center {
+    justify-content: center;
+}
+
+.field-sponsor {
+    width: 80%;
+    display: inline-block;
+    margin-right: 2.5%;
+}
+
+.sponsor-image {
+    width: 15%;
+    display: none;
+}
+
+.sponsor-image img {
+    width: 100%;
+}
+
+/*CUSTOM STYLES FOR MS*/
+
+.ms-icon-calendar {
+    line-height: 42px;
+}
+
+.ms-info__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ms-info__item {
+    margin-bottom: 20px;
+}
+
+.ms-info__item:last-child {
+    margin-bottom: 0;
+}
+
+.ms-info__value {
+    font-size: 16px;
+    color: #212121;
+    font-weight: 500;
+}
+
+.ms-info__img {
+    text-align: center;
+}
+
+/*My styles...*/
+
+.panel > .table:last-child, .panel > .table-responsive:last-child > .table:last-child {
+    border: 1px solid #ddd;
+}
+
+.panel-footer {
+    padding: 20px 20px;
+}
+
+.radio-inline, .checkbox-inline {
+    padding-left: 0;
+}
+
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+    margin-left: 25px;
+}
+
+.user__list {
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+.user__list li {
+    margin-bottom: 10px;
+}
+
+.user__list li span {
+    font-weight: 500;
+}
+
+.user__list li:last-child {
+    margin-bottom: 0;
+}
+
+span.label {
+    font-size: 14px;
+}
+
+.radio, .checkbox {
+    margin-top: 0;
+}
+
+.client__options .radio label, .client__options .checkbox label {
+    padding-left: 0;
+}
+
+.client__options span {
+    margin-right: 5px;
+}
+
+.header__name {
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-brand > img {
+    display: inline-block;
+    max-height: 80%;
+    height: auto;
+    margin-top: 4px;
+}
+
+/*@media (max-width: 1500px) {*/
+.datatable-scroll {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/*}*/
+
+.supervisor__item {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+li.ms-info__item.supervisor__list-header {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
+}
+
+.agreement p {
+    text-align: justify;
+}

@@ -1,0 +1,162 @@
+
+.winner-photo {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.winner-photo a {
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.winner-text {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-a-center {
+    align-items: center;
+}
+
+.flex-c-center {
+    justify-content: center;
+}
+
+.field-sponsor {
+    width: 80%;
+    display: inline-block;
+    margin-right: 2.5%;
+}
+
+.sponsor-image {
+    width: 15%;
+    display: none;
+}
+
+.sponsor-image img {
+    width: 100%;
+}
+
+.daterangepicker.dropdown-menu {
+    z-index: 1500;
+    /*background: #fff;*/
+    padding: 10px;
+}
+
+.ms-icon-calendar {
+    line-height: 42px;
+}
+.ms-info__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.ms-info__item {
+    margin-bottom: 20px;
+}
+.ms-info__item:last-child {
+    margin-bottom: 0;
+}
+.ms-info__value {
+    font-size: 16px;
+    color: #212121;
+    font-weight: 500;
+}
+.ms-info__img {
+    text-align: center;
+}
+
+
+/*My styles...*/
+
+.panel > .table:last-child, .panel > .table-responsive:last-child > .table:last-child {
+    border: 1px solid #ddd;
+}
+
+.panel-footer {
+    padding: 20px 20px;
+}
+
+.radio-inline, .checkbox-inline {
+    padding-left: 0;
+}
+
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+    margin-left: 25px;
+}
+
+.user__list {
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+.user__list li {
+    margin-bottom: 10px;
+}
+.user__list li span {
+    font-weight: 500;
+}
+.user__list li:last-child {
+     margin-bottom: 0;
+ }
+span.label {
+    font-size: 14px;
+}
+.radio, .checkbox {
+    margin-top: 0;
+}
+.client__options .radio label, .client__options .checkbox label {
+    padding-left: 0;
+}
+.client__options span {
+    margin-right: 5px;
+}
+
+.header__name {
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-brand {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+.navbar-brand > img {
+    display: inline-block;
+    max-height: 80%;
+    height: auto;
+    margin-top: 4px;
+}
+
+.sp-dd {
+    display: none;
+}
+.sp-preview {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+}
+
+.employee-image {
+    display: block;
+    width: 300px;
+}
+.employee-image img {
+    max-width: 100%;
+}
+
+/*@media (max-width: 1500px) {*/
+    .datatable-scroll {
+        width: 100%;
+        overflow-x: scroll;
+    }
+/*}*/

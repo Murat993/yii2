@@ -1,0 +1,17 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-burger {
+    width: 18px;
+    height: 15px;
+    background-position: -1px -1px;
+}
+
+.sprite-burger-active {
+    width: 18px;
+    height: 15px;
+    background-position: -1px -18px;
+}

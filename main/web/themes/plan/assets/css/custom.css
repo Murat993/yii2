@@ -1,0 +1,71 @@
+
+.winner-photo {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.winner-photo a {
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.winner-text {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-a-center {
+    align-items: center;
+}
+
+.flex-c-center {
+    justify-content: center;
+}
+
+.field-sponsor {
+    width: 80%;
+    display: inline-block;
+    margin-right: 2.5%;
+}
+
+.sponsor-image {
+    width: 15%;
+    display: none;
+}
+
+.sponsor-image img {
+    width: 100%;
+}
+
+.header__name {
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-brand {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+.navbar-brand > img {
+    display: inline-block;
+    max-height: 80%;
+    height: auto;
+    margin-top: 4px;
+}
+
+.sp-dd {
+    display: none;
+}
+.sp-preview {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+}

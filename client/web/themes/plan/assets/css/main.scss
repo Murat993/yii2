@@ -1,0 +1,83 @@
+@import "components/_vars.scss";
+@import "components/_mixins.scss";
+@import "components/_components.scss";
+@import "fonts.scss";
+
+body {
+	background-color: #E5E5E5;
+	font-family: 'Gotham Pro';
+}
+
+.content {
+	padding: 30px 0 0 0;
+
+	@media(max-width: $md-width) {
+		padding-top: 20px;
+	}
+}
+
+.content__title {
+	margin: 0 0 25px 0;
+	line-height: 1;
+	font: {
+		size: 24px;
+		weight: 500;
+	}
+
+	color: $text-color-2;
+
+	@media(max-width: $md-width) {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+}
+
+.index__head {
+	margin: 30px 0 20px;
+	line-height: 1;
+	font: {
+		size: 18px;
+		weight: 500;
+	}
+
+	color: $text-color-2;
+}
+
+.index__table {
+	background-color: #fff;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+}
+
+.index__data {
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	font-size: 16px;
+
+	small {
+		display: block;
+		line-height: 11px;
+		font-size: 12px;
+		color: #353828;
+	}
+
+	span {
+		display: block;
+		line-height: 20px;
+	}
+
+	b {
+		font-size: 18px;
+	}
+}
+
+@import "blocks/_header.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_sidebar.scss";
+@import "blocks/_breadcrumbs.scss";
+@import "blocks/_modals.scss";
+@import "blocks/_checkbox.scss";
+
+/*# sourceMappingURL=main.css.map */

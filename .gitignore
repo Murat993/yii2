@@ -1,0 +1,62 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+*vendor/
+*vagrant/
+*docs/
+Будет удалено adminplan
+Будет удалено web/assets/
+
+yii_test\.bat
+
+yii_test
+
+yii
+
+ms/web/error\.log
+
+ms/web/index-test\.php
+
+ms/web/index\.php
+
+ms/web/robots\.txt
+admin/web/assets/
+client/web/assets/
+#ms/web/assets/
+
+
+ms/runtime/
+
+
+admin/web/access\.log
+
+admin/web/error\.log
+
+client/web/access\.log
+
+client/web/error\.log
+
+composer\.lock
+
+ms/msplan
+
+ms/web/access\.log
+
+supervisor/runtime/
+
+#supervisor/web/assets/
+
+htaccess
+
+supervisor/supervisorplan
+
+supervisor/web/robots\.txt
+
+#supervisor/

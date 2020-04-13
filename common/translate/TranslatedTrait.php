@@ -1,0 +1,47 @@
+<?php
+
+namespace common\translate;
+
+use yii\db\ActiveRecord;
+
+/**
+ * Class TranslatedTrait
+ * @package lav45\translate
+ *
+ * @mixin TranslatedBehavior
+ */
+trait TranslatedTrait
+{
+    public function transactions()
+    {
+        return [
+            ActiveRecord::SCENARIO_DEFAULT => ActiveRecord::OP_ALL,
+        ];
+    }
+
+    /**
+     * @param string $language
+     * @return bool
+     */
+    public function hasTranslate($language)
+    {
+        return isset($this['hasTranslate'][$language]);
+    }
+
+    /**
+     * Returns a value indicating whether the named attribute has been changed
+     * or attribute has been changed in translation relation model.
+     * @param string $name the name of the attribute.
+     * @param boolean $identical whether the comparison of new and old value is made for
+     * identical values using `===`, defaults to `true`. Otherwise `==` is used for comparison.
+     * @return boolean whether the attribute has been changed
+     */
+    public function isAttributeChanged($name, $identical = true)
+    {
+        if (parent::isAttributeChanged($name, $identical) === true) {
+            return true;
+        }
+        $attributeName = $this->getTranslateAttributeName($name);
+        return $this->getTranslation()->isAttributeChanged($attributeName, $identical);
+    }
+}

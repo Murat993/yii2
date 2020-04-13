@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+.left-side {
+	float: left;
+	width: $side-width;
+
+	@media(max-width: $xl-width) {
+		width: $side-width-xl;
+	}
+
+	@media(max-width: $lg-width) {
+		float: none;
+		width: 100%;
+	}
+}
+
+.right-side {
+	width: calc(100% - $side-width);
+	margin-left: $side-width;
+	padding-left: $padding-width-1;
+	padding-right: $padding-width-2;
+	box-sizing: border-box;
+
+	@media(max-width: $xl-width) {
+		width: calc(100% - $side-width-xl);
+		margin-left: $side-width-xl;
+		padding-right: $padding-width-1;
+	}
+
+	@media(max-width: $lg-width) {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	@media(max-width: $md-width) {
+		padding-left: $padding-width-1 / 2;
+		padding-right: $padding-width-1 / 2;
+	}
+}
+
+.btn {
+	padding: 0 25px;
+	border: none;
+	border-radius: 30px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+
+	@include transition(none);
+
+	&:not(:disabled):not(.disabled):active, &:hover {
+		background-color: $active-color;
+	}
+
+	&:active, &:focus, &:not(:disabled):not(.disabled):active:focus {
+		@include box-shadow(none);
+	}
+}
+
+.btn-info {
+	background-color: $info-color;
+}
+
+.btn-transparent {
+	background-color: transparent;
+	color: $text-color-1;
+
+	&:not(:disabled):not(.disabled):active:focus, &:not(:disabled):not(.disabled):active, &:hover {
+		background-color: transparent;
+		color: $active-color;
+	}
+}
+
+.form__label {
+	font: {
+		size: 12px;
+		weight: 400;
+	}
+
+	color: $text-color-1;
+}
+
+.form-group {
+	.form__label {
+		margin-bottom: 18px;
+		line-height: 1;
+	}
+}
+
+.form-control {
+	font-size: 14px;
+	color: $text-color-1;
+}
+
+.form__date {
+	.form-control {
+		max-width: 100px;
+		border-right: none;
+	}
+
+	.input-group-text {
+		background-color: #fff;
+
+		span {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background: url(../images/calendar.png) no-repeat;
+		}
+	}
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Выбрать файл";
+    background-color: $active-color;
+    color: #fff;
+}
+
+.custom-file {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 105px);
+	font-size: 14px;
+}
+
+.tbl-block {
+	background-color: #fff;
+	border: 1px solid $border-color;
+	border-radius: 5px;
+}
+
+.table {
+	min-width: 907px;
+
+	td, th {
+		padding: 20px;
+	}
+}
+
+.table-form {
+	padding: 20px 30px 20px 20px;
+}
+
+.table-filials, .table-index {
+	width: 1470px;
+}
+
+.table-member-add {
+	min-width: 100%;
+}
+
+.form-filter {
+	select {
+		height: 40px;
+		font-size: 12px;
+		padding: 7px;
+	}
+}
+
+.icn {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+
+	&.icn-plus {
+		width: 20px;
+		height: 20px;
+		background: url(../images/plus.png) no-repeat;
+	}
+
+	&.icn-lock {
+		width: 12px;
+		height: 15px;
+		margin-right: 0;
+		background: url(../images/lock.png) no-repeat;
+	}
+
+	&.icn-check, &.icn-check.active {
+		width: 20px;
+		height: 20px;
+		margin-right: 0;
+		background: url(../images/checkbox.png) no-repeat -1px -1px;
+	}
+
+	&.icn-check.active {
+		background-position: -1px -23px;
+	}
+
+	&.icn-tool {
+		width: 20px;
+		height: 20px;
+		background: url(../images/tool.png) no-repeat;
+	}
+
+	&.icn-pls {
+		width: 10px;
+		height: 10px;
+		margin-right: 0;
+		background: url(../images/pls.png) no-repeat;
+	}
+
+	&.icn-pls-blue {
+		width: 10px;
+		height: 10px;
+		margin-right: 0;
+		background: url(../images/pls-blue.png) no-repeat;
+	}
+
+	&.icn-pdf {
+		width: 17px;
+		height: 16px;
+		background: url(../images/pdf.png) no-repeat;
+	}
+
+	&.icn-stat {
+		width: 18px;
+		height: 16px;
+		background: url(../images/statistic.png) no-repeat;
+	}
+
+	&.icn-key {
+		width: 18px;
+		height: 18px;
+		background: url(../images/key.png) no-repeat;
+	}
+
+	&.icn-exit {
+		width: 16px;
+		height: 16px;
+		background: url(../images/exit.png) no-repeat;
+	}
+
+	&.icn-search {
+		width: 18px;
+		height: 19px;
+		margin-right: 0;
+		background: url(../images/search.png) no-repeat;
+	}
+}
+
+.icon-button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&.edit {
+		width: 16px;
+		height: 16px;
+		background: url(../images/edit.png) no-repeat;
+	}
+
+	&.delete {
+		width: 13px;
+		height: 16px;
+		background: url(../images/delete.png) no-repeat;
+	}
+}

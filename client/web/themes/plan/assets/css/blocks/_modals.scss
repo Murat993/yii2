@@ -1,0 +1,329 @@
+.modal-content {
+	border: none;
+	border-radius: 0;
+}
+
+.modal-header, .modal-footer {
+	padding-left: 30px;
+	padding-right: 30px;
+	border: none;
+}
+
+.modal-header {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.modal-footer {
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+.modal-title {
+	line-height: 15px;
+	font: {
+		size: 16px;
+		weight: normal;
+	}
+	
+	color: $text-color-2;
+}
+
+.close {
+	font-size: 18px;
+}
+
+.modal-body {
+	padding: 0 30px;
+}
+
+.form__user-info {
+	margin-bottom: 20px;
+	line-height: 15px;
+
+	span {
+		font: {
+			size: 16px;
+			weight: 400;
+		}
+	}
+}
+
+.form__user-checkbox {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin-bottom: 10px;
+
+		span {
+			font-weight: 500;
+		}
+	}
+
+	&.sub {
+		span {
+			font-weight: 400;
+		}
+	}
+
+	.form__user-checkbox {
+		margin-left: 30px;
+	}
+}
+
+.form__photo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	background-color: #C4C4C4;
+	border-radius: 100%;
+}
+
+.interview__head {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 8px 20px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 21px;
+
+	@media(max-width: $sm-width) {
+		padding: 10px;
+	}
+	
+	span {
+		font: {
+			size: 18px;
+			weight: 500;
+		}
+		
+		color: #000;
+
+		@media(max-width: $sm-width) {
+			line-height: 18px;
+			font-size: 16px;
+		}
+	}
+}
+
+.interview__tab {
+	background-color: #efefef;
+	text-align: center;
+	line-height: 50px;
+	font: {
+		size: 14px;
+		weight: 500;
+	}
+
+	color: $text-color-2;
+	cursor: pointer;
+
+	@media(max-width: $lg-width) {
+		border-radius: 5px !important;
+	}
+
+	&.first {
+		border-radius: 5px 0 0 5px;
+	}
+
+	&.last {
+		border-radius: 0 5px 5px 0;
+	}
+
+	&.active {
+		background-color: $active-color;
+		color: #fff;
+	}
+}
+
+.interview__content {
+	display: none;
+	margin-top: 30px;
+
+	&.visible {
+		display: block;
+	}
+}
+
+.interview__info-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	&:first-child {
+		@media(max-width: $sm-width) {
+			margin-bottom: 20px;
+		}
+	}
+
+	li {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.interview__info-label {
+	display: block;
+	margin-bottom: 10px;
+	line-height: 11px;
+	font-size: 12px;
+	color: #9E9E9E;
+}
+
+.interview__info-value {
+	display: block;
+	line-height: 18px;
+	font-size: 16px;
+	color: $text-color-2;
+}
+
+.interview__list {
+	margin-top: 30px;
+}
+
+.interview__item {
+	margin-bottom: 10px;
+	cursor: pointer;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.uncollapsed {
+		i.icn {
+			@include transform(rotate(-45deg));
+		}
+	}
+}
+
+.interview__info {
+	display: table;
+	width: 100%;
+	padding: 0 20px;
+	border-radius: 5px;
+	color: $text-color-2;
+
+	@media(max-width: $sm-width) {
+		padding: 0 10px;
+	}
+
+	span {
+		display: table-cell;
+		vertical-align: top;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		line-height: 18px;
+
+		@media(max-width: $sm-width) {
+			line-height: 16px;
+			font-size: 14px;
+		}
+	}
+}
+
+.interview__number {
+	width: 45px;
+
+	@media(max-width: $sm-width) {
+		width: 25px;
+	}
+}
+
+.interview__title {
+	padding-right: 15px;
+}
+
+.interview__icon {
+	width: 10px;
+
+	i.icn {
+		@include transition(all 0.15s ease-in-out);
+	}
+}
+
+.interview__childs {
+	display: none;
+	padding-left: 45px;
+
+	@media(max-width: $sm-width) {
+		padding-left: 25px;
+	}
+
+	& > div {
+		&:first-child {
+			margin-top: 10px;
+		}
+	}
+}
+
+.interview__comments {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.interview__comment-item {
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.interview__comment-title {
+	margin-bottom: 10px;
+	line-height: 1;
+	font-size: 16px;
+}
+
+.interview__comment-text {
+	line-height: 16px;
+	font-size: 12px;
+
+	p {
+		margin-top: 0;
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.interview__comment-form {
+	margin-top: 75px;
+}
+
+.interview__task {
+	margin-bottom: 20px;
+
+	audio {
+		width: 100%;
+	}
+}
+
+.interview__task-head {
+	display: block;
+	margin-bottom: 10px;
+	line-height: 1;
+	font-size: 12px;
+	color: #9E9E9E;
+}
+
+.interview__task-photo {
+	position: relative;
+	margin-bottom: 10px;
+	
+	.icn {
+		position: absolute;
+		right: 11px;
+		bottom: 9px;
+	}
+}

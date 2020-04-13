@@ -1,0 +1,25 @@
+.footer {
+	margin-top: 60px;
+	padding-bottom: 25px;
+
+	@media(max-width: $sm-width) {
+		margin-top: 30px;
+		padding-bottom: 15px;
+	}
+}
+
+.footer__copyright {
+	display: block;
+	line-height: 20px;
+	font: {
+		size: 14px;
+		weight: 400;
+	}
+
+	color: #757575;
+
+	@media(max-width: $sm-width) {
+		line-height: 16px;
+		font-size: 12px;
+	}
+}
